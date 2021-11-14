@@ -10,6 +10,8 @@ print(df['Name'])
 print(df['Salary'])
 print(df[['Name','Salary']])
 
+col_names = 'A B C D'.split()
+df.columns = ['f1','f2','label']  #to rename the pandas columns
 
 # Similar to NumPy, you can create calls of min(), max(), mean(), 
 print(df['Age'].mean())
